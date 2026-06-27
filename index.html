@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Twine 인터랙티브 픽션 커미션 — 샘플</title>
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+  :root {
+    --bg:#0c0d10; --ink:#e8e4dc; --line:#3a3830; --muted:#8a8478;
+    --accent:#a8c4d8; --pink:#d4a0b0; --gold:#c8b87a;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Pretendard',Georgia,serif; line-height:1.85; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:640px; margin:0 auto; padding:5rem 2rem 7rem; }
+  .eyebrow { font-family:'Courier New',Courier,monospace; font-size:10px;
+    letter-spacing:0.25em; text-transform:uppercase; color:var(--line); margin-bottom:1.5rem; }
+  h1 { font-size:25px; font-weight:600; margin:0 0 1rem; letter-spacing:-0.01em; }
+  .lede { color:var(--muted); font-size:15px; margin:0; }
+  .lede .accent { color:var(--accent); }
+  .type { margin-top:3.75rem; }
+  .type-head { display:flex; align-items:baseline; gap:0.75rem;
+    border-top:1px solid var(--line); padding-top:1.25rem; margin-bottom:0.5rem; }
+  .type-name { font-family:'Courier New',Courier,monospace; font-size:12px;
+    letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); }
+  .type-kr { font-size:13px; color:var(--muted); }
+  .type-price { font-family:'Courier New',Courier,monospace; font-size:11px;
+    color:var(--line); margin-left:auto; }
+  .type-desc { color:var(--muted); font-size:13.5px; margin:0 0 1.75rem; }
+  .card { display:block; text-decoration:none; color:inherit;
+    border:1px solid var(--line); border-radius:2px; padding:1.5rem; margin-bottom:0.85rem;
+    transition:border-color .2s ease, background .2s ease; }
+  .card:hover { border-color:var(--accent); background:rgba(168,196,216,0.03); }
+  .card-title { font-size:17px; font-weight:600; margin:0 0 0.35rem; }
+  .card-title .arrow { color:var(--muted); font-weight:400; transition:color .2s ease; }
+  .card:hover .card-title .arrow { color:var(--accent); }
+  .card-meta { font-family:'Courier New',Courier,monospace; font-size:11px;
+    letter-spacing:0.05em; color:var(--line); margin:0 0 0.6rem; }
+  .card-note { font-size:13.5px; color:var(--muted); margin:0; }
+  .soon { border:1px dashed var(--line); border-radius:2px; padding:1.5rem;
+    color:var(--line); font-size:13px; text-align:center;
+    font-family:'Courier New',Courier,monospace; letter-spacing:0.05em; }
+  .foot { margin-top:5rem; border-top:1px solid var(--line); padding-top:1.5rem;
+    font-size:12px; color:var(--line); line-height:1.9; }
+  .foot a { color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line); }
+  .foot a:hover { color:var(--ink); border-bottom-color:var(--accent); }
+  @media (prefers-reduced-motion: reduce) { .card, .card-title .arrow { transition:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">Interactive Fiction · Commission Samples</div>
+  <h1>✦ 플레이하는 캐릭터 에피소드 ✦</h1>
+  <p class="lede">좋아하는 캐릭터의 서사나 페어의 에피소드를, 선택에 따라 이야기가 갈리고 여러 엔딩에 닿는 체험형 텍스트 게임으로 만들어 드립니다. 아래는 타입별 샘플이에요. <span class="accent">제목을 누르면 바로 플레이</span>할 수 있습니다.</p>
+
+  <section class="type">
+    <div class="type-head">
+      <span class="type-name">Shoestring</span>
+      <span class="type-kr">슈스트링</span>
+      <span class="type-price">24,000 P ~</span>
+    </div>
+    <p class="type-desc">짧은 한 장면. 선택지는 있으나 엔딩에 거의 영향을 주지 않습니다. 변수 추적 없음. 가벼운 상호작용·분위기 연출. 본문 약 1,500~3,000자.</p>
+    <div class="soon">샘플 준비 중</div>
+  </section>
+
+  <section class="type">
+    <div class="type-head">
+      <span class="type-name">Wedge</span>
+      <span class="type-kr">맛감자</span>
+      <span class="type-price">40,000 P ~</span>
+    </div>
+    <p class="type-desc">선택이 실제로 엔딩에 영향을 줍니다. 엔딩 2~3개. 플래그·아이템 등 변수 1~2종을 추적해 전개와 관계성이 달라집니다. 본문 약 3,000~6,000자.</p>
+
+    <a class="card" href="./undefined-romantic-object/">
+      <p class="card-title"><span class="arrow">▸ </span>작품 제목 ①</p>
+      <p class="card-meta">변수 추적형 · 아이템 분기 · 엔딩 다수</p>
+      <p class="card-note">아이템 획득 여부가 플래그로 기록되어, 같은 장면이 이전 선택에 따라 다르게 보이는 구성. 상태 추적형 분기의 예시입니다.</p>
+    </a>
+
+    <a class="card" href="./vagval/">
+      <p class="card-title"><span class="arrow">▸ </span>작품 제목 ②</p>
+      <p class="card-meta">트리 분기형 · 엔딩 5개</p>
+      <p class="card-note">변수 없이 선택마다 길이 갈라지며 다섯 엔딩에 닿는 구성. 트리 분기형 멀티루트의 예시로, 자수는 맛감자 상한급입니다.</p>
+    </a>
+  </section>
+
+  <section class="type">
+    <div class="type-head">
+      <span class="type-name">Hash Brown</span>
+      <span class="type-kr">해시브라운</span>
+      <span class="type-price">67,000 P ~</span>
+    </div>
+    <p class="type-desc">복수 변수, 조건부 텍스트(이전 선택에 따라 같은 장면이 다르게 보임), 엔딩 4개 이상, 회상·잠금 해제 요소. 본격 멀티루트 구성. 분량·가격 협의.</p>
+    <div class="soon">샘플 준비 중</div>
+  </section>
+
+  <div class="foot">
+    여기 실린 샘플은 오리지널 창작 캐릭터를 익명 처리한 버전입니다.<br>
+    커미션 신청 → <a href="https://crepe.cm/ko/@c6v20o/581i0ub4">CREPE에서 보기</a>
+  </div>
+
+</div>
+</body>
+</html>
